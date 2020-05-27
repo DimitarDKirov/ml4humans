@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="bower_components/reveal-js/css/reveal.min.css">
+		<link rel="stylesheet" href="bower_components/reveal-js/css/theme/beige.css" id ="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="bower_components/reveal-js/lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'bower_components/reveal-js/css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<style>
+			.container{
+			    display: flex;
+			}
+			.col{
+			    flex: 1;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h2>Machine Learning for Humans - Interpretability, Interactivity & Bias</h2>
+					<h3>Martin Boyanov</h3>
+					<h3>08.06 - Dev.BG Webinar</h3>
+				</section>
+				<section>
+					<h2>Agenda</h2>
+					
+				</section>
+				<section >
+					<h2>About me</h2>
+					<div class="container">
+					<div class="col">
+						<h3> Professional </h3>
+						<ul> 
+							<li> Machine Learning @ Smule
+							<li> Data Scientist @ Commetric 
+						    <li> Data Scientist @ Komfo
+						</ul>
+					</div>
+
+					<div class="col">
+						<h3> Academic </h3>
+						<ul>
+							<li>MSc @ Sofia University</li>
+							<li>BEng @ Edinburgh University</li>
+							<li>Competitions, Hackathons, Datathons</li>
+						</ul>
+					</div>
+					</div>
+
+				</section>
+				
+				<section>
+					<h2> Следващо събитие </h2>
+					<p>  Клъстъринг методи за дългосрочни инвестиционни стратегии</p>
+					<p> Димитър Христосков и Тодор Биларев </p>
+				</section>
+				<section id="themes">
+					<h2>Themes</h2>
+					<p>
+						Reveal.js comes with a few themes built in: <br>
+						<a href="?#/themes">Default</a> -
+						<a href="?theme=sky#/themes">Sky</a> -
+						<a href="?theme=beige#/themes">Beige</a> -
+						<a href="?theme=simple#/themes">Simple</a> -
+						<a href="?theme=serif#/themes">Serif</a> -
+						<a href="?theme=night#/themes">Night</a> <br>
+						<a href="?theme=moon#/themes">Moon</a> -
+						<a href="?theme=solarized#/themes">Solarized</a>
+					</p>
+					<p>
+						<small>
+							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
+						</small>
+					</p>
+				</section>
+
+
+				
+				
+			</div>
+
+		</div>
+
+		<script src="bower_components/reveal-js/lib/js/head.min.js"></script>
+		<script src="bower_components/reveal-js/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'bower_components/reveal-js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'bower_components/reveal-js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'bower_components/reveal-js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'bower_components/reveal-js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'bower_components/reveal-js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'bower_components/reveal-js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'bower_components/reveal-js/plugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
