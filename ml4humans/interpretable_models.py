@@ -5,9 +5,9 @@ import seaborn as sns
 import pandas as pd
 import numpy as np
 
-def weight_plot(model_results: RegressionResultsWrapper):
+def weight_plot(model_results: RegressionResultsWrapper, score='t'):
     summary = model_results.summary2().tables[1]
-    summary['abs.t'] = summary['t'].abs()
+    summary['abs.t'] = summary[score].abs()
     summary = summary.sort_values('abs.t', ascending=True)
     fig, ax = plt.subplots(figsize=(12, 9))
     sns.despine(fig, left=True, bottom=True)
