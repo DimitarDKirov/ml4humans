@@ -9,7 +9,7 @@ def weight_plot(model_results: RegressionResultsWrapper, score='t'):
     summary = model_results.summary2().tables[1]
     summary['abs.t'] = summary[score].abs()
     summary = summary.sort_values('abs.t', ascending=True)
-    fig, ax = plt.subplots(figsize=(12, 9))
+    fig, ax = plt.subplots(figsize=(12, 0.5*len(summary)))
     sns.despine(fig, left=True, bottom=True)
     for i, (coef, row) in enumerate(summary.iterrows()):
         # plot the points

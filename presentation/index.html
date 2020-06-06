@@ -89,18 +89,21 @@
 
 				</section>
 				<section>
-					<h2> Credit where credit is due </h2>
-					<p> For the technical part, please check out <a href="https://christophm.github.io/interpretable-ml-book/">Interpretable Machine Learning by Christoph Molnar</a>
-						<p> For bias & ethics, I recommend <a href="https://en.wikipedia.org/wiki/Weapons_of_Math_Destruction">Weapons of Math Destruction by Cathy O'Neil</a>
-				</section>
-				<section>
 					<h2>Agenda</h2>
 					<ol>
 						<li> Interpretable models
 						<li> Model-agnostic methods
-						<li> Interpretability for Deep Learning
+						<li> Example Interpretability for Deep Learning
 					</ol>
 				</section>
+				<section>
+					<h2> Credit where credit is due </h2>
+					<p> For the technical part, please check out <a href="https://christophm.github.io/interpretable-ml-book/">Interpretable Machine Learning by Christoph Molnar</a>
+					<p> For bias & ethics, I recommend <a href="https://en.wikipedia.org/wiki/Weapons_of_Math_Destruction">Weapons of Math Destruction by Cathy O'Neil</a>
+					<p> For Deep Learning: <a href="https://arxiv.org/abs/2004.14545"> Explainable Deep Learning: A Field Guide for the Uninitiated</a> </p>
+					<p> <a href="https://dataskeptic.com/"> Data Skeptic podcast on Intepretability </a>
+				</section>
+				
 				<section>
 					
 					<section data-markdown>
@@ -118,7 +121,61 @@
 						With *K-nearest neighbours* we can show the nearest neighbours.
 					</section>
 					<section>
+						Notebook.
 					</section>
+				</section>
+				<section data-markdown>
+					## Model-agnostic methods
+
+					Sometimes, our only means of inspection for a given model is to probe it with different inputs and analyze the outputs.
+
+					We will review the following methods:
+
+					* Partial Dependence Plots
+					* Surrogate methods
+					* Shapley Values
+				</section>
+
+				<section>
+					
+					<section data-markdown>
+						## Fighting the deep learning black box
+
+						Lots of folks claim that ML and specifically DL is a black box. That's fair until you try breaking it up.
+
+					</section>
+					<section data-markdown>
+						[The Unreasonable Effectiveness of Recurrent Neural Networks - Andrej Karpathy](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
+						
+						![ho](http://karpathy.github.io/assets/rnn/pane1.png)
+
+					</section>
+					<section data-markdown>
+						Embeddings
+					</section>
+					<section>
+						AWD-LSTM - Sequential Jacobian
+
+						Transformer, Sparse Transformer - Visualizing attention
+					</section>
+					<section data-markdown>
+						Cancer Detection
+
+						![Cancer detection](images/breast_cancer.png)
+					</section>
+					 <section>
+					 	Visualizing filters
+					 </section>
+					 <section>
+					 	Generating maximizing inputs
+					 </section>
+
+				</section>
+				<section>
+					Summary
+
+					* Machine learning is a tool - hone it, use it safely.
+					* 
 				</section>
 				<section>
 					<h2> Следващо събитие </h2>
